@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap');
 
 :root{
-    --main-color:rgb(108, 108, 228);
+    --main-color: rgba(22, 99, 175, 0.766);
     --grayblack:rgb(46, 43, 43);
     --bg:white;
     --border:.1rem solid rgba(43, 41, 41, 0.3);
@@ -73,8 +73,8 @@ section{
 
 .header{
     font-family: 'Roboto', sans-serif;
-    background: rgba(43, 41, 41, 0.3);
     display: flex;
+    background-color: whitesmoke;
     align-items: center;
     justify-content: space-between;
     padding:1.5rem 7%;
@@ -86,7 +86,7 @@ section{
 
 .header .logo img{
     width: auto;
-    height: 100px;
+    height: 70px;
 }
 
 .header .navbar a{
@@ -211,13 +211,26 @@ section{
     font-size: 6rem;
     text-transform: uppercase;
     color:white;
-}
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
 
 .home{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url("img/NSQ412\ Landmark\ 4-Line\ phone\ system-718165.jpg") no-repeat;
+    background:url("img/2020-01-23-16-00-20.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -257,7 +270,7 @@ section{
 .about .row .content h3{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 3rem;
-    color:rgb(108, 108, 228);
+    color:rgba(22, 99, 175, 0.766);
 }
 
 .about .row .content p{
@@ -267,6 +280,7 @@ section{
     padding:1rem 0;
     line-height: 1.8;
 }
+
 .services .serv-content{
     display: flex;
     flex-wrap: wrap;
@@ -295,7 +309,7 @@ section{
 .services .row .content h3{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 3rem;
-    color:rgb(108, 108, 228);
+    color:rgba(22, 99, 175, 0.766);
 }
 
 .services .row .content p{
@@ -316,8 +330,9 @@ section{
 
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: rgb(2 2 2 / 45%);
+    background: rgba(9, 44, 132, 0.893);
     text-align: center;
+    border: 2px;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
@@ -328,7 +343,7 @@ section{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: rgb(108, 108, 228);
+    color: #1a73e8;
     transition: color 0.3s ease;
 }
 
@@ -337,12 +352,19 @@ section{
     font-size: 20px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-    color:rgb(108, 108, 228);
+    color:#1a73e8;
 }
 
 .services .serv-content .card{
-    width: calc(100% - 0px);
+    width: calc(50% - 10px);
     margin-bottom: 20px;
+}
+
+.review .box-container{
+    background-color: rgba(0, 0, 0, 0.062);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
 }
 
 .contact .row{
@@ -363,7 +385,14 @@ section{
     flex:1 1 45rem;
     padding:5rem 2rem;
     text-align: center;
-    color: rgb(108, 108, 228);
+    color: rgba(22, 99, 175, 0.766);
+}
+.contact .row2 a{
+    color:black
+}
+.contact .row2 a:hover{
+    color: #1a73e8;
+
 }
 
 .contact .row h3{
@@ -427,16 +456,18 @@ section{
     margin:.3rem;
     border-radius: 50%;
 }
+.footer h1{
+    font-size: x-large;
+    padding-bottom: 20px;
 
-.footer .share a:hover{
-    background-color: var(--main-color);
 }
 
-.footer .links{
-    display: flex;
+.footer img{
+    height: 70px;
+    margin-right: 20px;
+    padding-top: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    padding:2rem 0;
     gap:1rem;
 }
 
